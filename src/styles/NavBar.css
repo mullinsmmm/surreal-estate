@@ -1,3 +1,14 @@
 .NavBar {
     border-style: dashed;
+    background-color: white;
+}
+
+.NavBarLogo {
+    max-width: 20%;
+}
+
+.NavBarLinks {
+    margin: 0;
+    padding: 5;
+    display: inline-block;
 }
