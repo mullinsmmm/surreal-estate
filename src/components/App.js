@@ -3,15 +3,15 @@ import React from 'react';
 import NavBar from './NavBar';
 import { Routes, Route } from 'react-router-dom';
 import Properties from './Properties';
-import AddProperties from "./AddProperties";
+import AddProperties from './AddProperties';
 
 const App = () => (
   <div className="App">
     <h1>Surreal Estate</h1>
     <NavBar />
     <Routes>
-      <Route path="/" element={Properties} />
-      <Route path="/" element={AddProperties} />
+      <Route path="/properties" element={<Properties />} />
+      <Route path="/add-properties" element={<AddProperties />} />
     </Routes>
   </div>
 );
