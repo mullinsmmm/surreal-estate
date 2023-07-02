@@ -1,9 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const Properties = () => 
-    <div>
-        Properties Page
-    </div>;
-
+const Properties = () => <div>Properties Page</div>;
 
 export default Properties;
