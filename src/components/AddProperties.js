@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/add-properties.css';
+import axios from 'axios';
 
 const AddProperties = () => {
   const initialState = {
@@ -15,7 +16,25 @@ const AddProperties = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+
+    const postData = {
+      title: '2 Bed House For Sale',
+      type: 'bungalow',
+      bedrooms: '2',
+      bathrooms: '1',
+      price: '160000',
+      city: 'Manchester',
+      email: 'joelandlord@money.com',
+    };
+
+    axios
+      .post('http://localhost:4000/api/v1/PropertyListing', postData)
+      .then((response) => {
+        console.log(response.data); // request was successful
+      })
+      .catch((error) => {
+        console.log(error); // An error occured
+      });
   };
 
   const handleFieldChange = (event) => {
