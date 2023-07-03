@@ -1,6 +1,6 @@
 import React from 'react';
 
-const propertyCard = ({
+const PropertyCard = ({
   title,
   type,
   bedrooms,
@@ -20,4 +20,4 @@ const propertyCard = ({
   </div>
 );
 
-export default propertyCard;
+export default PropertyCard;
