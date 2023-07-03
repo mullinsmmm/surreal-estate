@@ -10,7 +10,7 @@ const App = () => (
     <h1>Surreal Estate</h1>
     <NavBar />
     <Routes>
-      <Route path="/properties" element={<Properties />} />
+      <Route path="/view-properties" element={<Properties />} />
       <Route path="/add-properties" element={<AddProperties />} />
     </Routes>
   </div>
