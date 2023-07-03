@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PropertyCard from './Propertycard';
+import Alert from './Alert';
+import '../styles/properties.css';
 
 const initialState = {
   properties: [],
@@ -20,13 +22,17 @@ const Properties = () => {
   }, []);
 
   return (
-    <div>
+    <div className="properties">
       <h1>Properties</h1>
       {properties.map((property) => (
-        <PropertyCard key={property._id} {...property} />
+        <div key={property._id} className="item">
+          <PropertyCard key={property._id} {...property} />
+        </div>
       ))}
     </div>
   );
 };
 
 export default Properties;
+
+// REQUIRES ALERT FUNCTION
