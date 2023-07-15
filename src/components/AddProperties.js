@@ -6,7 +6,7 @@ import Alert from './Alert';
 const AddProperties = () => {
   const initialState = {
     fields: {
-      title: 'Post Title',
+      title: 'Describe the property',
       bedrooms: '0',
       bathrooms: '0',
       price: '0',
@@ -24,13 +24,13 @@ const AddProperties = () => {
     setAlert({ message: '', isSuccess: false });
 
     const postData = {
-      title: '2 Bed House For Sale',
-      type: 'bungalow',
-      bedrooms: '2',
-      bathrooms: '1',
-      price: '160000',
-      city: 'Manchester',
-      email: 'joelandlord@money.com',
+      title: fields.title,
+      type: fields.type,
+      bedrooms: fields.bedrooms,
+      bathrooms: fields.bathrooms,
+      price: fields.price,
+      city: fields.city,
+      email: fields.email,
     };
 
     axios
@@ -53,9 +53,11 @@ const AddProperties = () => {
     <div className="add-properties">
       <form onSubmit={handleAddProperty}>
         <Alert message={alert.message} success={alert.isSuccess} />
-        <div>
+        <div className="formItem">
+          <h1>Add A Property</h1>
           <label htmlFor="title">
-            <span>Post Title:</span>
+            <span>Title</span>
+            <br />
             <input
               id="title"
               name="title"
@@ -64,9 +66,10 @@ const AddProperties = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="city">
-            <span>City:</span>
+            <span>City</span>
+            <br />
             <select
               id="city"
               name="city"
@@ -80,9 +83,10 @@ const AddProperties = () => {
             </select>
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="type">
-            <span>type:</span>
+            <span>Property Type</span>
+            <br />
             <select
               id="type"
               name="type"
@@ -99,9 +103,10 @@ const AddProperties = () => {
             </select>
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="bedrooms">
-            <span>Bedrooms:</span>
+            <span>Bedrooms</span>
+            <br />
             <input
               id="bedrooms"
               name="bedrooms"
@@ -110,9 +115,10 @@ const AddProperties = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="bathrooms">
-            <span>Bathrooms:</span>
+            <span>Bathrooms</span>
+            <br />
             <input
               id="bathrooms"
               name="bathrooms"
@@ -121,9 +127,10 @@ const AddProperties = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="price">
-            <span>Price:</span>
+            <span>Price</span>
+            <br />
             <input
               id="price"
               name="price"
@@ -132,9 +139,10 @@ const AddProperties = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="formItem">
           <label htmlFor="email">
-            <span>Contact Email:</span>
+            <span>Contact Email</span>
+            <br />
             <input
               id="email"
               name="email"

@@ -1,0 +1,47 @@
+.sidebar {
+    float: left;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color:pink;
+    background-color: rgb(190, 190, 235);
+    position: fixed;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    margin: 0rem;
+    left: 0;
+    top: 0;
+}

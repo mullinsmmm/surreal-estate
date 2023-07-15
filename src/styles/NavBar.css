@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 500;
+}
+
 .NavBar {
     border-style: dashed;
     background-color: white;
-}
-
-.NavBarLogo {
-    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
 }
 
 .NavBarLinks {
-    margin: 0;
-    padding: 5;
-    display: inline-block;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    list-style: none;
+    position: relative;
 }

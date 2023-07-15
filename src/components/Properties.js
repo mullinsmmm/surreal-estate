@@ -13,6 +13,8 @@ const initialState = {
 const Properties = () => {
   const [properties, setProperties] = useState([]);
 
+  const [alert, setAlert] = useState({ message: '' });
+
   useEffect(() => {
     axios
       .get('http://localhost:4000/api/v1/PropertyListing')

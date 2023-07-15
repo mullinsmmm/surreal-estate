@@ -1,0 +1,20 @@
+.propertyCard {
+    background-color: pink;
+    color:black;
+    outline: dashed;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+}
+
+img {
+    padding: 0.05rem;
+}
+
+.pCardItem {
+    font-weight: 500;
+    margin-left: 5vw;
+}

@@ -7,7 +7,6 @@ import AddProperties from './AddProperties';
 
 const App = () => (
   <div className="App">
-    <h1>Surreal Estate</h1>
     <NavBar />
     <Routes>
       <Route path="/view-properties" element={<Properties />} />
